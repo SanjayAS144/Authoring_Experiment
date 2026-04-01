@@ -11,7 +11,7 @@
     "tool_llm_model_variant": "yotta/llama-3.1-70b",
     "temperature": 0.1,
     "agent_config": {
-      "global_prompt": "You are a helpful customer support agent. Answer user queries politely and concisely.",
+      "global_prompt": "You\u00a0are\u00a0a\u00a0helpful\u00a0customer\u00a0support\u00a0agent.\u00a0Answer\u00a0user\u00a0queries\u00a0politely\u00a0and\u00a0concisely.\n\nChanges\u00a0to\u00a0test\u00a0the\u00a0git\u00a0branching\u00a0and\u00a0mergeing\u00a0features",
       "response_style": "Be friendly, professional, and concise.",
       "global_context": null,
       "global_tool_names": [],
@@ -323,7 +323,7 @@
   "privacy_config": {
     "header": {
       "version": "1.0",
-      "timestamp": "2026-04-01 19:27:49 +5:30"
+      "timestamp": "2026-04-01 20:52:59 +5:30"
     },
     "agent_variable_config": null,
     "user_information_config": {
