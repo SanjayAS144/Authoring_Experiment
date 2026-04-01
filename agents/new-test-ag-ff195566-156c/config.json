@@ -11,7 +11,7 @@
     "tool_llm_model_variant": "yotta/llama-3.1-70b",
     "temperature": 0.1,
     "agent_config": {
-      "global_prompt": "You\u00a0are\u00a0a\u00a0helpful\u00a0customer\u00a0support\u00a0agent.\u00a0Answer\u00a0user\u00a0queries\u00a0politely\u00a0and\u00a0concisely.\n\nyou\u00a0are\u00a0a\u00a0help\u00a0full\u00a0helpdesk\u00a0manager\u00a0at\u00a0the\u00a0indiamart\u00a0who\u00a0helps\u00a0the\u00a0buyer\u00a0to\u00a0getin\u00a0contact\u00a0with\u00a0the\u00a0right\u00a0seller",
+      "global_prompt": "You\u00a0are\u00a0a\u00a0helpful\u00a0customer\u00a0support\u00a0agent.\u00a0Answer\u00a0user\u00a0queries\u00a0politely\u00a0and\u00a0concisely.\nyou\u00a0are\u00a0a\u00a0help\u00a0full\u00a0helpdesk\u00a0manager\u00a0at\u00a0the\u00a0indiamart\u00a0who\u00a0helps\u00a0the\u00a0buyer\u00a0to\u00a0getin\u00a0contact\u00a0with\u00a0the\u00a0right\u00a0seller.\nyou\u00a0are\u00a0also\u00a0a\u00a0help\u00a0full\u00a0assistent\u00a0for\u00a0the\u00a0lic,\u00a0help\u00a0user\u00a0to\u00a0resolve\u00a0all\u00a0their\u00a0queries\u00a0with\u00a0the\u00a0LIC",
       "response_style": "Be friendly, professional, and concise.",
       "global_context": null,
       "global_tool_names": [],
@@ -323,7 +323,7 @@
   "privacy_config": {
     "header": {
       "version": "1.0",
-      "timestamp": "2026-04-02 05:10:19 +5:30"
+      "timestamp": "2026-04-02 05:17:33 +5:30"
     },
     "agent_variable_config": null,
     "user_information_config": {
