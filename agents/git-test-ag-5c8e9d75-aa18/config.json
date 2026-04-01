@@ -11,7 +11,7 @@
     "tool_llm_model_variant": "yotta/llama-3.1-70b",
     "temperature": 0.1,
     "agent_config": {
-      "global_prompt": "You are a helpful customer support agent. Answer user queries politely and concisely.",
+      "global_prompt": "You\u00a0are\u00a0a\u00a0helpful\u00a0customer\u00a0support\u00a0agent.\u00a0Answer\u00a0user\u00a0queries\u00a0politely\u00a0and\u00a0concisely.\n\nChanges\u00a0to\u00a0test\u00a0the\u00a0git\u00a0branching\u00a0and\u00a0mergeing\u00a0features",
       "response_style": "Be friendly, professional, and concise.",
       "global_context": null,
       "global_tool_names": [],
@@ -23,33 +23,35 @@
       "states": {
         "greeting": {
           "name": "greeting",
-          "goal": "Greet the user and understand their query",
+          "goal": "",
           "instructions": "Welcome the user warmly. Ask how you can help them today. Once the user states their issue, move to the resolution state.",
           "context": null,
           "tool_names": [],
           "next_states": [
             "resolution"
           ],
-          "agent_variables_in_context": null
+          "agent_variables_in_context": []
         },
         "resolution": {
           "name": "resolution",
-          "goal": "Resolve the user query",
+          "goal": "",
           "instructions": "Answer the user question. If resolved, thank them and end the conversation.",
           "context": null,
           "tool_names": [],
           "next_states": [
             "greeting"
           ],
-          "agent_variables_in_context": null
+          "agent_variables_in_context": []
         }
       },
       "initial_state_name": "greeting",
       "enable_structured_prompt": false,
       "enable_lid": false,
       "enable_voicemail_detection": false,
-      "send_multiple_messages": null,
-      "supported_languages": null,
+      "send_multiple_messages": false,
+      "supported_languages": [
+        "Hindi"
+      ],
       "thread_window": null,
       "structured_content_thread_window": null,
       "tool_calls_thread_window": null,
@@ -65,7 +67,7 @@
   },
   "intro_message_config": {
     "config_version": "1.0",
-    "audio": null,
+    "audio": "Hello\u00a0How\u00a0are\u00a0you?this\u00a0changes\u00a0are\u00a0to\u00a0test\u00a0the\u00a0git\u00a0based\u00a0versioning",
     "multilingual_audio": null,
     "pre_recorded_audio_message": null
   },
@@ -73,8 +75,7 @@
     "config_version": "1.0",
     "initial_language_name": "Hindi",
     "supported_languages": [
-      "Hindi",
-      "English"
+      "Hindi"
     ],
     "lid_supported_languages": [],
     "enable_language_identification": false,
@@ -86,7 +87,7 @@
   "speech_to_text_config": {
     "config_version": "1.0",
     "asr_model_name": null,
-    "speech_hotwords": null,
+    "speech_hotwords": [],
     "system_prompt": null
   },
   "text_to_speech_config": {
@@ -319,6 +320,40 @@
     "output_type": "audio",
     "background_sound": null
   },
-  "privacy_config": null,
+  "privacy_config": {
+    "header": {
+      "version": "1.0",
+      "timestamp": "2026-04-01 20:52:59 +5:30"
+    },
+    "agent_variable_config": null,
+    "user_information_config": {
+      "phone_number": {
+        "mask_config": {
+          "privacy_strategy": "mask",
+          "pattern": "(\\d{6})(\\d{4})",
+          "replacement": "******\\2"
+        },
+        "hash_config": {
+          "privacy_strategy": "hash",
+          "salt": null,
+          "hash_algorithm": "sha256"
+        },
+        "encrypt_config": null
+      },
+      "email": {
+        "mask_config": {
+          "privacy_strategy": "mask",
+          "pattern": "(\\w{3})\\w*@(\\w{3})\\w*(\\.\\w{2,})",
+          "replacement": "\\1***@\\2***\\3"
+        },
+        "hash_config": {
+          "privacy_strategy": "hash",
+          "salt": null,
+          "hash_algorithm": "sha256"
+        },
+        "encrypt_config": null
+      }
+    }
+  },
   "memory_config": null
 }
