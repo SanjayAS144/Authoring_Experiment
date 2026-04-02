@@ -39,6 +39,8 @@ async def on_start(on_start_input: OnStartInput) -> OnStartOutput:
         4. Stores specification_options / quantity_unit_options for the bot
         5. Stores raw questions with IDs in internal_variables for on_end
     """
+
+    logger.info(f"OnStartInput: {on_start_input}")
     return OnStartOutput(
         agent_variables=agent_variables,
         internal_variables=internal_variables,
