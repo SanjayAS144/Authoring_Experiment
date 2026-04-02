@@ -1,0 +1,1 @@
+Welcome the user warmly. Ask how you can help them today. Once the user states their issue, move to the resolution state.
